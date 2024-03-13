@@ -20,7 +20,7 @@ def main():
         print("7. Terminate process")
         print("8. List running processes")
         print("9. Create thread")
-        print("10. Terminate thread")
+        print("10. Pause thread")
         print("11. List running threads")
         print("12. Exit")
 
@@ -49,8 +49,8 @@ def main():
             name = input("Enter the name for the thread: ")
             thread_manager.create_thread(name)
         elif choice == "10":
-            identifier = input("Enter the TID or name of the thread to terminate: ")
-            thread_manager.terminate_thread(identifier)
+            identifier = input("Enter the TID or name of the thread to pause: ")
+            thread_manager.pause_thread(identifier)
         elif choice == "11":
             thread_manager.list_threads()
         elif choice == "12":
